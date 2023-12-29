@@ -1,9 +1,10 @@
 pipeline{
     agent any
     
-    
-    }
+
+
     stages{
+
         stage("Git Checkout"){
             steps{
                 git credentialsId: 'javahome2', url: 'https://github.com/Gopirajn/project.git'
@@ -31,3 +32,4 @@ pipeline{
             }
         }
     }
+}
